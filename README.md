@@ -154,35 +154,44 @@
 
 - watchOS
 ```
-MC3_Tering
-  |
-  └── MC3_Tering_Watch Watch App
-          |── 🗂 MLModel
-          │   │── 📄 TeringClassifier_totalData_window100.mlmodel
-          │   │── 📄 TeringClassifier_totalData_window200.mlmodel
-          │   └── 📄 TennisClassifierViewModel.swift
-          │
-          |── 🗂 Model
-          │   │── 📄 ViewModelWatch.swift
-          │   │── 📄 SwingInfo.swift
-          │   │── 📄 ParticleEffect.swift
-          │   │── 📄 HealthStartInfo.swift
-          │   │── 📄 HealthResultInfo.swift
-          │   │── 📄 SwingList.swift
-          │   │── 📄 HealthKitManager.swift
-          │   │── 📄 Particle.swift
-          │   └── 📄 WorkoutManager.swift
-          │
-          |── 🗂 View
-          │   │── 📁 StartView
-          │   │── 📁 WorkoutView
-          │   │── 📁 ResultView
-          │   └── 📁 EtcView
-          |
-          └── 🗂 Extension 
-              │── 📄 ColorExtension.swift
-              │── 📄 CircleProgressBar.swift
-              └── 📄 ElapsedTimeView.swift
+📦MC3_Tering_Watch Watch App
+ ┣ 📂Extension
+ ┃ ┣ 📜CircleProgressBar.swift
+ ┃ ┣ 📜ColorExtension.swift
+ ┃ ┗ 📜ElapsedTimeView.swift
+ ┣ 📂MLModel
+ ┃ ┣ 📜TennisClassifierViewModel.swift
+ ┃ ┗ 📜TeringClassifier_totalData_window100.mlmodel
+ ┣ 📂Model
+ ┃ ┣ 📂Particle
+ ┃ ┃ ┣ 📜Particle.swift
+ ┃ ┃ ┗ 📜ParticleEffect.swift
+ ┃ ┣ 📂Workout
+ ┃ ┃ ┣ 📜SwingInfo.swift
+ ┃ ┃ ┣ 📜WorkoutManager.swift
+ ┃ ┃ ┗ 📜WorkoutResultInfo.swift
+ ┃ ┗ 📜ViewModelWatch.swift
+ ┣ 📂Preview Content
+ ┃ ┗ 📂Preview Assets.xcassets
+ ┃ ┃ ┗ 📜Contents.json
+ ┣ 📂View
+ ┃ ┣ 📂EtcView
+ ┃ ┃ ┣ 📜CompleteView.swift
+ ┃ ┃ ┗ 📜TestLayoutView.swift
+ ┃ ┣ 📂ResultView
+ ┃ ┃ ┗ 📜ResultView.swift
+ ┃ ┣ 📂StartView
+ ┃ ┃ ┣ 📜ReadyView.swift
+ ┃ ┃ ┗ 📜SwingCountView.swift
+ ┃ ┗ 📂WorkoutView
+ ┃ ┃ ┣ 📂Complete
+ ┃ ┃ ┃ ┣ 📜SelectView.swift
+ ┃ ┃ ┃ ┗ 📜SwingCompleteView.swift
+ ┃ ┃ ┣ 📂Measurement
+ ┃ ┃ ┃ ┣ 📜MeasuringView.swift
+ ┃ ┃ ┃ ┗ 📜SwingResultView.swift
+ ┃ ┃ ┗ 📜CountingView.swift
+ ┗ 📜MC3_Tering_WatchApp.swift
               
 ```
 
