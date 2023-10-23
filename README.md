@@ -112,31 +112,43 @@
 
 - iOS
 ```
-MC3_Tering
-  |
-  └── MC3_Tering
-          |── 🗂 Model
-          │   │── 📁 CongreteModel
-          │   │── 📁 CoreData
-          │   │── 📄 ViewModelPhone.swift
-          │   │── 📄 WorkoutDataModel.swift
-          │   └── 📄 UserDataModel.swift
-          │
-          |── 🗂 View
-          │   │── 📁 AppGuideView
-          │   │── 📁 CameraView
-          │   │── 📁 CongreteModalView
-          │   │── 📁 OnboardingView
-          │   │── 📁 TodayDetailView
-          │   │── 📁 GuideView
-          │   │── 📁 SettingView
-          │   │── 📁 MainView
-          │   │── 📁 Extension
-          │   │── 📄 ContentView.swift
-          │   └── 📄 TestPhoneView.swift
-          │
-          └── 🗂 Util 
-              └── 📄 GifView.swift
+📦MC3_Tering
+ ┣ 📂Model
+ ┃ ┣ 📂CongreteModel
+ ┃ ┣ 📂CoreData
+ ┃ ┃ ┣ 📂UserData
+ ┃ ┃ ┣ 📂UserInfo.xcdatamodeld
+ ┃ ┃ ┣ 📂WorkOutData
+ ┃ ┃ ┗ 📜CoreDataManager.swift
+ ┃ ┣ 📜UserDataModel.swift
+ ┃ ┣ 📜ViewModelPhone.swift
+ ┃ ┗ 📜WorkOutDataModel.swift
+ ┣ 📂Util
+ ┃ ┗ 📜GifView.swift
+ ┣ 📂View
+ ┃ ┣ 📂AppGuideView
+ ┃ ┣ 📂CongreteModalView
+ ┃ ┣ 📂Extension
+ ┃ ┣ 📂GuideView
+ ┃ ┣ 📂MainView
+ ┃ ┃ ┣ 📂ChartView
+ ┃ ┃ ┣ 📂RecordListView
+ ┃ ┃ ┣ 📜MainView.swift
+ ┃ ┃ ┗ 📜RingChartsView.swift
+ ┃ ┣ 📂OnboardingView
+ ┃ ┣ 📂Resource
+ ┃ ┃ ┣ 📂Font
+ ┃ ┃ ┣ 📂Gif
+ ┃ ┃ ┣ 📜CustomBackButton.swift
+ ┃ ┃ ┗ 📜CustomSegmentedView.swift
+ ┃ ┣ 📂SettingView
+ ┃ ┣ 📂TodayDetailView
+ ┃ ┣ 📜ContentView.swift
+ ┃ ┗ 📜TestPhoneView.swift
+ ┣ 📜CameraModel.swift
+ ┣ 📜CameraView.swift
+ ┣ 📜CameraViewModel.swift
+ ┗ 📜MC3_TeringApp.swift
               
 ```
 
