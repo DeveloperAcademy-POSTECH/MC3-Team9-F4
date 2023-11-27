@@ -8,11 +8,11 @@
 <div align="center">
 <img width = "100" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/e56932eb-ac55-40bb-9a43-0002bcaeb24e">
   
-# Tering
+# Tering(테링)
 </div>
 
 <div align="center">
-요약 이미지
+<img width="250" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/b7f4581c-e35c-4451-bf86-af90d091bcee"> <img width="250" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/9e9a7bc0-7471-4345-ae4c-f22547cbb9ec">
 <!-- <img width="393" height="852" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/c82c0121-69fb-4373-b3d8-6ace2b23c992"> -->
 
 <br>
@@ -20,7 +20,6 @@
 <br>
 
 [<img width = "200" src="https://github-production-user-asset-6210df.s3.amazonaws.com/120548537/251533420-0eb9b31b-8203-48b7-8dcd-3725a8c9da49.png">](https://apps.apple.com/kr/app/tering/id6464368312)
-
   
 </div>
 
@@ -35,45 +34,40 @@
 반복되는 자세 연습에 지친 테니스 초심자들이 애플워치를 통해 즉각적으로 피드백을 받으면서 재밌게 연습을 할 수 있도록 앱을 만들게 되었습니다.
   
 
-### 👉 Feature 1. Core Motion, CoreML 을 활용한 스윙 동작 감지 및 분류
-  - 테니스 연습을 시작하면 애플워치에서 센서값을 추적합니다.
-  - 스윙이 감지되면 스윙 동작 감지 ML 모델이 자세를 예측합니다.
+### ✅ Core Motion, CoreML 을 활용한 스윙 동작 감지 및 분류
+  - 테니스 연습을 시작하면 Core Motion 프레임워크를 통해 애플워치에서 센서값을 추적합니다.
+  - 센서값을 통해 스윙이 감지되면 Create ML을 통해 학습시킨 Activity Classifier 모델이 스윙 동작을 분류합니다.
   - 모델의 예측 결과에 따라 어떤 자세인지(포핸드/백핸드)와 자세의 정확도에 따른 평가(Perfect/Bad)를 보여줍니다.
 
-### 👉 Feature 2. 햅틱을 통한 
+### ✅ HealthKit을 활용한 백그라운드 동작 & 햅틱을 통한 피드백
+  - HealthKit의 HKWorkoutSession을 활용해서 애플워치가 잠듦 상태에 들어가도 테링은 계속 유저의 동작을 추적합니다.
+  - 테니스 연습 중에 소모한 칼로리, 심박수, 운동 시간을 체크해줍니다.
+  - 테니스 스윙이 감지되어 모델 분류가 수행되면 햅팁을 통해 유저에게 피드백을 알려줍니다.
+
+### ✅ Watch Connectivity를 활용한 데이터 전송
+  - watchOS App에서 수집된 테니스 데이터는 Watch Connectivity 프레임워크를 통해 페어링된 iOS App으로 전송됩니다.
 
 <br>
 
-<br>
-  
+
+
 ## 🔍 Preview
-<img width="393" height="852" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/c82c0121-69fb-4373-b3d8-6ace2b23c992"> <img width="198" height="242" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/adfc81b0-772e-4115-9f8d-38370205e63e">
+
+|(iOS) 오늘의 스윙 기록 확인| (iOS) 이전 스윙 데이터 확인|
+|:---:|:---:|
+|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/38561bb0-894b-4001-8f9a-b3f6e75b27a4"/>|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/b4711d10-e6a9-43d0-aafc-e54c3b8edeaa"/>|
+
+| (watchOS) 목표 스윙 개수 설정 | (watchOS) 테니스 연습 시작 | (watchOS) 스윙 감지 및 동작 분류 |
+|:---:|:---:|:---:|
+|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/786b5c74-cd16-4b5c-bd58-a35408906059"/>|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/d2740669-259f-48fb-a28b-275a4ada4756"/>|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/33d11ddc-2a06-46c0-855d-f939a8f4eec2"/>|
+
+| (watchOS) 스윙 분류 결과 확인 | (watchOS) 테니스 연습 결과 확인 | (watchOS) 운동 데이터 확인 |
+|:---:|:---:|:---:|
+|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/3cd06ae1-a04b-47f0-8e5f-b97d9b276546"/>|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/1610c7d4-3a73-42e7-90a6-2ba44bf5a242"/>|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team9-F4/assets/89764127/5a641623-124d-4037-bfb3-2a0d661f3b74"/>|
+
 <br>
-<!-- <br>
 
-## 🎥 **Preview**
 
-|PDF 파일 불러오기| 발표 정보 입력하기|
-|:---:|:---:|
-|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team17-ForJaeRin/assets/99160103/8df8b34b-7e37-4f4f-9219-40b6e9e3a01d"/>|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team17-ForJaeRin/assets/99160103/e39d8fa4-b8f7-4005-a640-4a598a3cbbea"/>|
-
-|발표 스크립트 작성하기| 발표 페이지 그룹 정하기|
-|:---:|:---:|
-|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team17-ForJaeRin/assets/99160103/ff27456b-6628-40f2-82bb-d258e33aed92"/>|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team17-ForJaeRin/assets/99160103/be665380-064a-4d46-9a01-068b860a6a35"/>|
-
-|발표 키워드 작성| 그룹 별 키워드 확인|
-|:---:|:---:|
-|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team17-ForJaeRin/assets/99160103/7a2b75d3-50e8-4431-b2ab-ea2b24a29aec"/>|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team17-ForJaeRin/assets/99160103/64b81c2a-232c-4a0a-ab03-472bd38bc175"/>|
-
-|발표 연습|발표 연습 상세 확인|
-|:---:|:---:|
-|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team17-ForJaeRin/assets/99160103/54d638df-745e-4042-9984-eac741824610"/>|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team17-ForJaeRin/assets/99160103/0a7f29a0-bffa-4199-8674-83b7d91b744c"/>|
-
-|이전 발표 프로젝트 불러오기| 이전 발표 연습 불러오기|
-|:---:|:---:|
-|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team17-ForJaeRin/assets/99160103/5eb9e572-3b9c-4b88-9554-326053b88ffe"/>|<img width="80%" src="https://github.com/DeveloperAcademy-POSTECH/MC3-Team17-ForJaeRin/assets/99160103/74c5f7c7-0fd0-4b1c-bd7d-31df9ac22c66"/>|
-
-<br> -->
 
 <br>
 
@@ -87,7 +81,7 @@
 
 ## 🔩 Tech & Skills
 
-<img width="73" src="https://img.shields.io/badge/SwiftUI-blue"> <img width="86" src="https://img.shields.io/badge/WatchKit-blue"> <img width="170" src="https://img.shields.io/badge/Watch Connectivity-blue"> <img width="110" src="https://img.shields.io/badge/Core Motion-blue"> <img width="75" src="https://img.shields.io/badge/CoreML-blue"> <img width="95" src="https://img.shields.io/badge/Create ML-blue"> <img width="95" src="https://img.shields.io/badge/Combine-blue"> <br>
+<img width="73" src="https://img.shields.io/badge/SwiftUI-blue"> <img width="86" src="https://img.shields.io/badge/WatchKit-blue"> <img width="95" src="https://img.shields.io/badge/HealthKit-blue"> <img width="170" src="https://img.shields.io/badge/Watch Connectivity-blue"> <img width="110" src="https://img.shields.io/badge/Core Motion-blue"> <img width="75" src="https://img.shields.io/badge/CoreML-blue"> <img width="95" src="https://img.shields.io/badge/Create ML-blue"> <img width="95" src="https://img.shields.io/badge/Combine-blue"> <br>
 
 <br>
 
