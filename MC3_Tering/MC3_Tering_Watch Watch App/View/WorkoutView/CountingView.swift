@@ -120,7 +120,7 @@ struct ChekingSwingView: View {
                 .frame(width: 150, height: 150, alignment: .center)
         }
         .background(
-            NavigationLink(destination: MeasuringView(), isActive: tennisClassifierViewModel.isSwingBinding) {
+            NavigationLink(destination: MeasuringView(), isActive: $tennisClassifierViewModel.isSwing) {
                 EmptyView()
             }
             .hidden()
